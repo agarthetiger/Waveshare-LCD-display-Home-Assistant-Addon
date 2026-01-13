@@ -1,16 +1,16 @@
-# Argon Fan HAT Home-Assistant Addon
+# Waveshare 2 inch LCD Display Home-Assistant Addon
 
-<https://argon40.com/en-gb/products/argon-fan-hat>
+Home Assistant (HASS) Addon to support displaying basic system information on a Waveshare 2 inch LCD display.
 
-Home Assistant (HASS) Addon to support the Argon Fan HAT
+This is specifically for this display: <www.waveshare.com/wiki/2inch_LCD_Module>.
 
-This is a copy of fork of tgryphon's fork for a Waveshare PWM Fan HAT, which fixed problems with reschix's original which started to throw errors after July 2023. There is not much of the original code remaining but credit where it's due, a lot of the problems I'd have had with getting started with a HASS addon had already been solved by them.
+Important: This requires SPI enabled to make this work, done using the Sunfounder Pi Config Add-On. See <https://docs.sunfounder.com/projects/pironman5/en/latest/pironman5/set_up/set_up_home_assistant.html#add-the-sunfounder-add-ons-repository> for details.
 
 See the [DOCS](./DOCS.md) page for details of how to install and use this add-on.
 
 ## Development
 
-Push changes to this repo with a bumped version in config.yaml and in main.py, then refresh the add-ons in Home Assistant and an updated version numbber should appear. I don't know if it's mandatory to bump the version number to pull new changes in Home Assistant but it helps with debugging.
+Push changes to this repo with a bumped version in config.yaml and in main.py, then refresh the add-ons in Home Assistant and an updated version number should appear. I don't know if it's mandatory to bump the version number to pull new changes in Home Assistant but it helps with debugging.
 
 ## Support
 
