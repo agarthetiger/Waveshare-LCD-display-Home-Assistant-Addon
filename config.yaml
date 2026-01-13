@@ -1,0 +1,14 @@
+name: "Waveshare LCD Display Home Assistant Add-on"
+description: "Support for a Waveshare 2 inch LCD display for Home Assistant"
+version: "0.1.0"
+slug: "waveshare_lcd_display_add_on"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+devices:
+  - /dev/i2c-0
+  - /dev/i2c-1
+  - /dev/i2c-10
+  - /dev/i2c-11
