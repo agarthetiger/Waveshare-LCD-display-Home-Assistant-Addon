@@ -6,7 +6,7 @@ RUN apk add --no-cache \
   py3-pip \
   wget \
   unzip \
-  swig \
+  swig3.0 \
   python-dev \
   python3-dev \
   python-setuptools \
@@ -24,7 +24,7 @@ RUN \
 COPY requirements.txt /bin/requirements.txt
 RUN \
   pip install --upgrade pip && \
-  pip3 install -r /bin/requirements.txt
+  pip3 install -r /bin/requirements.txt --root-user-action
 
 ADD lib /bin/lib
 ADD font /bin/font
