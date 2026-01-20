@@ -1,6 +1,7 @@
 # gpiod
 gpiozero
 # smbus
+lgpio
 Pillow
 numpy
 spidev
