@@ -8,7 +8,7 @@ sys.path.append("..")
 from lib import LCD_2inch
 from PIL import Image,ImageDraw,ImageFont
 
-version = "v0.0.5"
+version = "v0.0.6"
 # Raspberry Pi pin configuration:
 RST = 27
 DC = 25
