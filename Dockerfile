@@ -9,7 +9,7 @@ RUN \
   pip3 install -r /bin/requirements.txt
 
 COPY bin/main.py /bin/main.py
-COPY lib/*.* /lib
-COPY font/*.* /font
+COPY /lib /bin/lib
+COPY /font /bin/font
 
 CMD [ "python", "./bin/main.py" ]
