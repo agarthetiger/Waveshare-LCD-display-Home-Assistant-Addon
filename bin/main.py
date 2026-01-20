@@ -4,11 +4,11 @@ import logging
 # import psutil
 import shutil
 import socket
-sys.path.append("..")
+#sys.path.append("..")
 from lib import LCD_2inch
 from PIL import Image,ImageDraw,ImageFont
 
-version = "v0.0.7"
+version = "v0.0.8"
 # Raspberry Pi pin configuration:
 RST = 27
 DC = 25
@@ -23,7 +23,7 @@ logging.basicConfig(
     style="{",
 )
 logging.info(f"Starting Waveshare LCD display AddOn {version}")
-Font02 = ImageFont.truetype("../font/Font02.ttf",40)
+Font02 = ImageFont.truetype("./font/Font02.ttf",40)
 
 def display_init():
     # display with hardware SPI:
