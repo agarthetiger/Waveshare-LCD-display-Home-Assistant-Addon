@@ -1,7 +1,16 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache python3 py3-pip wget unzip
+RUN apk add --no-cache \
+  python3 \
+  py3-pip \
+  wget \
+  unzip \
+  swig \
+  # python-dev \
+  python3-dev \
+  # python-setuptools \
+  python3-setuptools
 FROM python:3
 
 # Install lgpio, details from https://github.com/joan2937/lg

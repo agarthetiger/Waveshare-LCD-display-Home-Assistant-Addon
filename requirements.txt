@@ -1,7 +1,5 @@
 gpiod
 gpiozero
-rpi.gpio 
-# pigpio
 smbus
 Pillow
 numpy
