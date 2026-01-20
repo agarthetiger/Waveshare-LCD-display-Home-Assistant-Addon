@@ -24,7 +24,7 @@ RUN \
 COPY requirements.txt /bin/requirements.txt
 RUN \
   pip install --upgrade pip && \
-  pip3 install -r /bin/requirements.txt --root-user-action
+  pip3 install -r /bin/requirements.txt
 
 ADD lib /bin/lib
 ADD font /bin/font
