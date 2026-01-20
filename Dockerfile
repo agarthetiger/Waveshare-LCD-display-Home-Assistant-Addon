@@ -8,8 +8,8 @@ RUN \
   pip install --upgrade pip && \
   pip3 install -r /bin/requirements.txt
 
+ADD lib /bin/lib
+ADD font /bin/font
 COPY bin/main.py /bin/main.py
-COPY /lib /bin/lib
-COPY /font /bin/font
 
 CMD [ "python", "./bin/main.py" ]

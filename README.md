@@ -8,6 +8,14 @@ Important: This requires SPI enabled to make this work, done using the Sunfounde
 
 See the [DOCS](./DOCS.md) page for details of how to install and use this add-on.
 
+## Building locally with docker
+
+Riun the following command to replicate the build command from within Home Assistant.
+
+```shell
+docker buildx build . --tag 4901440b/aarch64-addon-waveshare_lcd_display_add_on:0.0.5 --file Dockerfile --platform linux/arm64 --pull --build-arg BUILD_FROM=ghcr.io/home-assistant/aarch64-base:latest --build-arg BUILD_VERSION=0.0.5 --build-arg BUILD_ARCH=aarch64 
+```
+
 ## Development
 
 Push changes to this repo with a bumped version in config.yaml and in main.py, then refresh the add-ons in Home Assistant and an updated version number should appear. I don't know if it's mandatory to bump the version number to pull new changes in Home Assistant but it helps with debugging.

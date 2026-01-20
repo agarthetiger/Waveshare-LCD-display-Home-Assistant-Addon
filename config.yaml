@@ -1,6 +1,6 @@
 name: "Waveshare LCD Display Home Assistant Add-on"
 description: "Support for a Waveshare 2 inch LCD display for Home Assistant"
-version: "0.0.6"
+version: "0.0.7"
 slug: "waveshare_lcd_display_add_on"
 arch:
   - aarch64
