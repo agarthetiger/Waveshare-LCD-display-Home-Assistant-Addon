@@ -6,10 +6,11 @@ FROM python:3
 RUN \
   pip install --upgrade pip && \
   pip3 install --no-cache-dir gpiod && \
-  pip3 install --no-cache-dir smbus
+  pip3 install --no-cache-dir smbus && \
+  pip3 install --upgrade Pillow
 
 COPY bin/main.py /bin/main.py
-COPY lib /lib
-COPY font /font
+COPY lib/*.* /lib
+COPY font/*.* /font
 
 CMD [ "python", "./bin/main.py" ]
