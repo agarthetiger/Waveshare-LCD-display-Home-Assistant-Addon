@@ -11,10 +11,11 @@ See the [DOCS](./DOCS.md) page for details of how to install and use this add-on
 ## GPIO access
 
 Add spi to the config.yaml file.
-Note the gpio python code needs access to a PinFactory. Can't use the following
+Note the gpiozero python package needs access to a GPIO PinFactory. Can't use the following
 
 * rpi.gpio Will only work on Raspberry Pi OS
 * pigpio - Tries to use localhost:8888
+* Native (Device /dev/gpiomem) - This is not supported for PWM by gpiozero, see <https://gpiozero.readthedocs.io/en/stable/development.html#development-installation> for reference.
 
 ## Building locally with docker
 

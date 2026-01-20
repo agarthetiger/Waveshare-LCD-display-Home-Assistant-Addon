@@ -1,4 +1,4 @@
-import sys
+# import sys
 import time
 import logging
 # import psutil
@@ -8,7 +8,7 @@ import socket
 from lib import LCD_2inch
 from PIL import Image,ImageDraw,ImageFont
 
-version = "v0.0.15"
+version = "v0.0.16"
 # Raspberry Pi (BCM/WiringPi) pin configuration:
 RST = 27
 DC = 25
