@@ -7,9 +7,9 @@ RUN apk add --no-cache \
   wget \
   unzip \
   swig \
-  # python-dev \
+  python-dev \
   python3-dev \
-  # python-setuptools \
+  python-setuptools \
   python3-setuptools
 FROM python:3
 
@@ -29,5 +29,7 @@ RUN \
 ADD lib /bin/lib
 ADD font /bin/font
 COPY bin/main.py /bin/main.py
+
+# RUN pip3 install /bin/lib/lgpio-0.2.2.0.tar.gz
 
 CMD [ "python", "./bin/main.py" ]
