@@ -1,4 +1,5 @@
 gpiod
+gpiozero
 smbus
 Pillow
 numpy
