@@ -8,6 +8,6 @@ arch:
   - armhf
   - armv7
 devices:
-  - "/dev/spidev0.0:/dev/spidev0.0"
-  - "/dev/spidev0.1:/dev/spidev0.1"
+  - /dev/spidev0.0
+  - /dev/spidev0.1
 
