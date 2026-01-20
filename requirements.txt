@@ -1,0 +1,5 @@
+gpiod
+smbus
+Pillow
+numpy
+spidev
