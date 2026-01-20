@@ -8,8 +8,8 @@ import socket
 from lib import LCD_2inch
 from PIL import Image,ImageDraw,ImageFont
 
-version = "v0.0.13"
-# Raspberry Pi pin configuration:
+version = "v0.0.14"
+# Raspberry Pi (BCM/WiringPi) pin configuration:
 RST = 27
 DC = 25
 BL = 18
