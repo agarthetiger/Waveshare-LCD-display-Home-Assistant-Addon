@@ -8,10 +8,7 @@ FROM python:3
 RUN apt-get update && \
   apt-get install \
   swig \
-  swig3.0 \
-  python-dev \
   python3-dev \
-  python-setuptools \
   python3-setuptools
 
 # Install lgpio, details from https://github.com/joan2937/lg
