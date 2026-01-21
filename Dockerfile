@@ -6,7 +6,7 @@ RUN apk add --no-cache python3 py3-pip
 FROM python:3
 
 RUN apt-get update && \
-  apt-get install \
+  apt-get install -y \
   swig \
   python3-dev \
   python3-setuptools
